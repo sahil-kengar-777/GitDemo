@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Details</title>
+        <style>
+            body{
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
+            .container
+            {
+                max-width: 1200px;
+                width: 100%;
+                padding: 25px 30px;
+            }
+            .container .title{
+                font-size: 32px;
+                font-weight: 500;
+               
+            }
+            .container form .user-details
+            {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 20px 0 12px 0;
+            }
+            form .user-details .input-box
+            {
+                margin-bottom: 25px;
+                width: calc(100% / 4 - 20px);
+            }
+            .user-details .input-box input
+            {
+                height: 30px;
+                width: 80%;
+                font-weight: 100;
+                margin-bottom: 2px;
+                outline-color: none;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                padding-left: 15px;
+                border-bottom-width: 2px;
+                transition: all 0.5s ease;
+            }
+            form .button{
+                width: calc(100% / 1 - 0px);
+            }
+        </style>
+    </head>
+ <body>
+   <div class="container">
+     <div class="title">Basic Details</div>
+     <form action="#">
+        <div class="user-details">
+            <div class="input-box">
+                <label for="aadhar">Aadhar Number</label>
+                <input type="text" id="aadhar" name="aadharnum" placeholder="Aadhar Number">
+            </div>
+            <div class="input-box">
+                <label for="gender">Gender</label> 
+                <input list="genders" id="gender" name="gender" placeholder="Select..">
+                <datalist id="genders">
+                  <option value="Male"></option>
+                  <option value="Female"></option>
+                  <option value="other"></option>
+                </datalist>
+            </div>
+            <div class="input-box">
+                <label for="date">Birthday</label>
+                <input type="date" id="date" name="DOB">
+            </div>
+            <div class="input-box">
+                <label for="blood">Blood Group</label> 
+                <input list="bloodgroups" id="blood" name="bloodgroup" placeholder="Blood Group">
+                <datalist id="bloodgroups">
+                  <option value="A-"></option>
+                  <option value="A+"></option>
+                  <option value="B-"></option>
+                  <option value="B+"></option>
+                  <option value="AB-"></option>
+                  <option value="AB+"></option>
+                  <option value="O-"></option>  
+                  <option value="O+"></option>
+                </datalist>
+            </div>
+            <div class="input-box">
+                <label for="sal">Salutation</label> 
+                <input list="salutation" id="sal" name="salutation" placeholder="Select..">
+                <datalist id="salutation">
+                  <option value="Mr."></option>
+                  <option value="Mrs."></option>
+                  <option value="Ms."></option>
+                </datalist>
+            </div>
+            <div class="input-box">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name">
+            </div>
+            <div class="input-box">
+                <label for="mname">Middle Name</label>
+                <input type="text" name="mname" placeholder="Middle Name">
+            </div>
+            <div class="input-box">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
+            </div>
+            <div class="input-box">
+                <label for="edu">highest Education</label> 
+                <input list="highest" id="edu" name="hedu" placeholder="Select..">
+                <datalist id="highest">
+                  <option value="Graduate"></option>
+                  <option value="Under Graduate"></option>
+                  <option value="Not Prefer to ans"></option>
+                </datalist>
+            </div>
+            <div class="input-box">
+                <label for="passing">Passing Year</label>
+                <input type="text" id="passing" name="passing" placeholder="Passing Year">
+            </div>
+            <section class="contact">
+                 <div class="input-box">
+                     <div class="title">Contact Information</div>
+                      <input type="text" name="pcontact" placeholder="Primary Contact">
+                      <input type="email" name="pemail" placeholder="Primary Email">
+                      <input type="text" name="scontact" placeholder="Secondry Contact">
+                      <input type="email" name="semail" placeholder="Secondry Email">
+                     </div>
+            </section>
+            <section class="Address">
+               <div class="input-box">
+                   <div class="title" id="address">Address Information</div>
+                   <textarea rows="5" cols="100" placeholder="Enter Your Address" id="address" name="address" ></textarea>
+                </div>
+            </section>
+                <div class="button">
+                  <input type="submit" value="Submit">
+                </div>
+        </div>
+     </form>
+   </div> 
+ </body>
+</html>
